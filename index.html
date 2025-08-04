@@ -7,27 +7,94 @@
     <title>Espaço da Informática</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <div id="logo-header">
+            <img src="images/Prancheta 6.png" alt="Logo do Espaço da Informática" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Quem somos</a></li>
+                <li><a href="#horarios">Horários</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </nav>
+        <div id="contatos-header">
+            <a href="https://www.instagram.com/espacodainformatica" target="_blank" class="link-social"><img
+                    src="images/instagram.png" alt="ícone instagram" class="icone-social" /></a>
+            <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank" class="link-social"><img
+                    src="images/whatsapp.png" alt="ícone whatsapp" class="icone-social" /></a>
+        </div>
+    </header>
     <main>
-        <img src="images/logo.png" id="logo">
-        <p>Espaço da <br>Informática</p>
-        <section id="info">
-            <section id="contacts">
-                <div class="instagram"><img src="images/instagram.png" /><a
-                        href="https://www.instagram.com/espacodainformatica/">espacodainformatica</a></div>
-                <div class="whatsapp"><img src="images/whatsapp.png" /><a
-                        href="https://api.whatsapp.com/send?phone=5519982033852">Comercial</a></div>
-                <div class="whatsapp"><img src="images/whatsapp.png" /><a
-                        href="https://api.whatsapp.com/send?phone=5519982033852">Tecnico</a></div>
-            </section>
-            <hr>
-            <section id="address">
-                Av. Dr. Ângelo Simões, 842
-                <br>Jardim Leonor, Campinas
-                <br>Sao Paulo 13041-150
-            </section>
+        <section id="inicio">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/carousel/service-428540_1280.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/carousel/pexels-tanasovich-2588757.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/carousel/service-428539_1280.jpg" alt=""></div>
+                </div>
+                <!-- Botões -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Paginação -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <script>
+                new Swiper('.swiper', {
+                    loop: true,
+                    pagination: { el: '.swiper-pagination' },
+                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+                    autoplay: { delay: 3000 },
+                });
+            </script>
+        </section>
+        <section id="sobre">
+            <h1>Somos o Espaço da Informática</h1>
+            <p>Especialista em notebooks seminovos com procedência, <strong>qualidade e garantia de 6 meses</strong>.
+            </p>
+            <p>Atuamos há <strong>mais de 15 anos no mercado</strong>, oferecendo equipamentos revisados, prontos para
+                uso e com suporte técnico de verdade.</p>
+            <p>Atendemos empresas e profissionais que buscam performance, economia e confiança na hora de investir em
+                tecnologia.</p>
+            <p>Pronta entrega | Atendimento consultivo | Pós-venda com responsabilidade</p>
+        </section>
+        <section id="horarios">
+            <h1>Horários de Atendimento</h1>
+            <p>Segunda a sexta</p>
+            <p>das 8H às 18H</p>
+        </section>
+        <section id="localizacao">
+            <p>O lugar <strong>perfeito</strong> onde a qualidade e a procedência se encontram</p>
+            <div
+                style="width: 200px; height: 200px; background-color: #ccc; border: 2px dashed #999; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif;">
+                Imagem aqui
+            </div>
+            <p>
+                Av. Dr. Ângelo Simões, 842 <br>
+                Jardim Leonor, Campinas - SP <br>
+                <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank"><img
+                        src="images/whatsapp.png" class="whatsapp-logo" /> (19) 98203-3852</a>
+            </p>
+        </section>
+        <section id="servicos">
+            <h1>Nossos Serviços</h1>
+            <p>
+            <ul>
+                <li>Venda de notebooks seminovos</li>
+                <li>Manutenção e formatação de computadores</li>
+                <li>Atendimento corporativo</li>
+                <li>Troca e upgrade de peças</li>
+                <li>Suporte técnico com agendamento</li>
+                <li>Produtos com entrega imediata</li>
+            </ul>
+            </p>
         </section>
     </main>
     <footer>
