@@ -2,107 +2,297 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço da Informática</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espaço da Informática</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="assets/iconmoon/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#horarios">Horários</a></li>
-                <li><a href="#localizacao">Localização</a></li>
-                <div id="logo-header">
-                    <a href="/"><img src="images/Prancheta 6.png" alt="Logo do Espaço da Informática" /></a>
-                </div>
+  <header id="header">
+    <nav class="container">
+      <a class="logo" href="#"><img src="images/logo-cropped.png" id="logo-image"> Espaço
+        da&nbsp;<span>Informática</span>
+      </a>
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Inicio</a></li>
+          <li><a class="title" href="#About">Sobre</a></li>
+          <li><a class="title" href="#Services">Serviços</a></li>
+          <li><a class="title" href="#Testimonials">Depoimentos</a></li>
+          <li><a class="title" href="#Contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+  </header>
 
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Quem somos</a></li>
-            </ul>
-        </nav>
-        <div id="contatos-header">
-            <a href="https://www.instagram.com/espacodainformatica" target="_blank" class="link-social"><img
-                    src="images/instagram.png" alt="ícone instagram" class="icone-social" /></a>
-            <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank" class="link-social"><img
-                    src="images/whatsapp.png" alt="ícone whatsapp" class="icone-social" /></a>
+  <main>
+    <section class="section" id="home">
+      <div class="container grid">
+        <div class="image">
+          <img src="images/carousel/service-428539_1280.jpg" alt="Pessoa colocando memória RAM em uma placa mãe." />
         </div>
-    </header>
-    <main>
-        <section id="inicio">
-
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/carousel/service-428540_1280.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/carousel/pexels-tanasovich-2588757.jpg" alt=""></div>
-                    <div class="swiper-slide"><img src="images/carousel/service-428539_1280.jpg" alt=""></div>
-                </div>
-                <!-- Botões -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- Paginação -->
-                <div class="swiper-pagination"></div>
-                Venda e aluguel de computadores novos e seminovos
-            </div>
-            <script>
-                new Swiper('.swiper', {
-                    loop: true,
-                    pagination: { el: '.swiper-pagination' },
-                    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-                    autoplay: { delay: 3000 },
-                });
-            </script>
-        </section>
-        <section id="sobre">
-            <h1>Somos o Espaço da Informática</h1>
-            <p>Especialista em notebooks seminovos com procedência, <strong>qualidade e garantia de 6 meses</strong>.
-            </p>
-            <p>Atuamos há <strong>mais de 15 anos no mercado</strong>, oferecendo equipamentos revisados, prontos para
-                uso e com suporte técnico de verdade.</p>
-            <p>Atendemos empresas e profissionais que buscam performance, economia e confiança na hora de investir em
-                tecnologia.</p>
-            <p>Pronta entrega | Atendimento consultivo | Pós-venda com responsabilidade</p>
-        </section>
-        <section id="horarios">
-            <h1>Horários de Atendimento</h1>
-            <p>Segunda a sexta</p>
-            <p>das 8H às 18H</p>
-        </section>
-        <section id="localizacao">
-            <p>O lugar <strong>perfeito</strong> onde a qualidade e a procedência se encontram</p>
-            <div
-                style="width: 200px; height: 200px; background-color: #ccc; border: 2px dashed #999; display: flex; align-items: center; justify-content: center; color: #666; font-family: sans-serif;">
-                Imagem aqui
-            </div>
+        <div class="text">
+          <h1 class="title">Espaço da Informática</h1>
+          <p>
+            Notebooks e desktops novos e seminovos.
+            Assistência técnica.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank"><button class="button-whatsapp">
+              Fale conosco
+              <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+                  fill="#fff"></path>
+                <path
+                  d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+                  fill="#fff"></path>
+                <path
+                  d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+                  fill="#cfd8dc"></path>
+                <path
+                  d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+                  fill="#40c351"></path>
+                <path clip-rule="evenodd"
+                  d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                  fill-rule="evenodd" fill="#fff"></path>
+              </svg>
+            </button></a>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
+    <section class="section" id="About">
+      <div class="container grid">
+        <div class="image">
+          <img src="images/carousel/pexels-tanasovich-2588757.jpg" alt="Uma placa mãe de desktop." />
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre Nós</h2>
+          <p>
+            Há mais de 15 anos, somos referência em notebooks seminovos com procedência, qualidade e garantia de 6
+            meses. Trabalhamos com equipamentos revisados, prontos para uso, e oferecemos suporte técnico de verdade,
+            para que você tenha segurança em cada etapa da sua compra. Atendemos empresas e profissionais que valorizam
+            performance, economia e confiança na hora de investir em tecnologia.
+          </p>
+          <p>Pronta entrega | Atendimento consultivo | Pós-venda com responsabilidade</p>
+        </div>
+      </div>
+    </section>
+    <div class="divider-2"></div>
+    <section class="section" id="Services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p class="subtitle">
+            Com mais de 15 anos no mercado, a <strong> Espaço da Informática </strong>já
+            se tornou referência em Campinas e região.
+          </p>
+        </header>
+        <div class="cards grid">
+          <div class="card">
+            <span class="material-symbols-outlined">
+              sell
+            </span>
+            <h3 class="title">Venda</h3>
             <p>
-                Av. Dr. Ângelo Simões, 842 <br>
-                Jardim Leonor, Campinas - SP <br>
-                <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank"><img
-                        src="images/whatsapp.png" class="whatsapp-logo" /> (19) 98203-3852</a>
+              Notebooks e desktops novos e seminovos com procedência, garantia e prontos para uso, ideais para quem
+              busca economia e qualidade.
             </p>
-        </section>
-        <section id="servicos">
-            <h1>Nossos Serviços</h1>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined">
+              build
+            </span>
+            <h3 class="title">Manutenção</h3>
             <p>
-            <ul>
-                <li>Venda de notebooks seminovos</li>
-                <li>Manutenção e formatação de computadores</li>
-                <li>Atendimento corporativo</li>
-                <li>Troca e upgrade de peças</li>
-                <li>Suporte técnico com agendamento</li>
-                <li>Produtos com entrega imediata</li>
-            </ul>
+              Formatamos e realizamos reparos em computadores, deixando os equipamentos rápidos e otimizados.
             </p>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined">
+              support_agent
+            </span>
+            <h3 class="title">Atendimento</h3>
+            <p>
+              Suporte especializado para empresas e profissionais que precisam de soluções ágeis e confiáveis.
+            </p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined">
+              upgrade
+            </span>
+            <h3 class="title">Upgrade</h3>
+            <p>
+              Troca e instalação de peças para melhorar o desempenho do seu computador com segurança e eficiência.
+            </p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined">
+              handshake
+            </span>
+            <h3 class="title">Suporte</h3>
+            <p>
+              Agendamento técnico personalizado para resolver problemas com praticidade e sem perda de tempo.
+            </p>
+          </div>
+          <div class="card">
+            <span class="material-symbols-outlined">
+              local_shipping
+            </span>
+            <h3 class="title">Entrega</h3>
+            <p>
+              Produtos disponíveis para retirada ou envio imediato, garantindo rapidez na sua compra.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
+    <section class="section" id="Testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos de quem ja passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&lsquo;&lsquo;</span>
+                  Fui muito bem atendida desde o primeiro contato. Meu notebook chegou rápido e em ótimo estado.
+                  Recomendo demais!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Foto de Wanessa souza" />
+                  Wanessa Souza
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&lsquo;&lsquo;</span>
+                  Comprei um notebook seminovo e não parece usado! A equipe foi super atenciosa e me ajudou a escolher o
+                  modelo ideal.
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de Valeska Fabris" />
+                  Valeska Fabris
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&lsquo;&lsquo;</span>
+                  Tive um problema técnico e resolveram tudo rapidinho, com profissionalismo. Excelente pós-venda!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Foto de Franciele Venega" />
+                  Franciele Venega
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&lsquo;&lsquo;</span>
+                  Atendimento nota 10. Comprei dois computadores para minha empresa e estão funcionando perfeitamente.
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Foto de Felipe Martins" />
+                  Felipe Martins
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&lsquo;&lsquo;</span>
+                  Fiquei impressionado com o cuidado e a qualidade dos equipamentos. Serviço de primeira!
+                </p>
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Foto de João Ricardo" />
+                  João Ricardo
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="divider-2"></div>
+    <section class="section" id="Contact">
+      <div class="container grid">
+        <div class="text">
+          <h2 class="title">Entre em contato com a gente</h2>
+          <p>
+            Entre em contato com a Espaço da Informática, queremos tirar suas dúvidas,
+            ouvir suas críticas e sugestões.
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=5519982033852" target="_blank"><button class="button-whatsapp">
+              Fale conosco
+              <svg viewBox="0 0 48 48" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"
+                  fill="#fff"></path>
+                <path
+                  d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"
+                  fill="#fff"></path>
+                <path
+                  d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"
+                  fill="#cfd8dc"></path>
+                <path
+                  d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"
+                  fill="#40c351"></path>
+                <path clip-rule="evenodd"
+                  d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                  fill-rule="evenodd" fill="#fff"></path>
+              </svg>
+            </button>
+          </a>
+        </div>
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i>19 98203-3852</li>
+            <li><i class="icon-map-pin"></i> Av. Dr. Ângelo Simões, 842 - Jardim Leonor <br> Campinas - SP</li>
+            <li><i class="icon-mail"></i> contato@beautysalon.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="divider-1"></div>
+  </main>
+  <footer class="section">
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#">Espaço <span>da Informática</span>.</a>
+        <p><a href="https://www.instagram.com/mavo.media/">©2025 Mavo Media.</a></p>
+        <p>Todos os direitos reservados.</p>
+      </div>
+      <div class="social grid">
+        <a href="https://www.instagram.com/espacodainformatica" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+  <a href="#home" class="backtop"> <i class="icon-arrow-up"></i></a>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
