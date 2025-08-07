@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço da Informática</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -13,16 +14,16 @@
 
 <body>
     <header>
-        <div id="logo-header">
-            <img src="images/Prancheta 6.png" alt="Logo do Espaço da Informática" />
-        </div>
         <nav>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Quem somos</a></li>
                 <li><a href="#horarios">Horários</a></li>
                 <li><a href="#localizacao">Localização</a></li>
+                <div id="logo-header">
+                    <a href="/"><img src="images/Prancheta 6.png" alt="Logo do Espaço da Informática" /></a>
+                </div>
+
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Quem somos</a></li>
             </ul>
         </nav>
         <div id="contatos-header">
@@ -34,6 +35,7 @@
     </header>
     <main>
         <section id="inicio">
+
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="images/carousel/service-428540_1280.jpg" alt=""></div>
@@ -45,6 +47,7 @@
                 <div class="swiper-button-prev"></div>
                 <!-- Paginação -->
                 <div class="swiper-pagination"></div>
+                Venda e aluguel de computadores novos e seminovos
             </div>
             <script>
                 new Swiper('.swiper', {
