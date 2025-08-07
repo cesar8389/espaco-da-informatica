@@ -25,10 +25,11 @@ ul {
   --base-color: #274a5e;
   --base-color-second: #01b5cc;
   --base-color-alt: #f6b130;
-  --title-color: hsl(var(--hue) 41% 10%);
+  --white: #fcfcfc;
+  --title-color: #01b5cc;
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: var(--base-color);
   --title-font-size: 1.875rem;
   --subtitle-font-size: 1rem;
   --title-font: 'Poppins', sans-serif;
@@ -42,7 +43,7 @@ html {
 
 body {
   font: 400 1rem var(--body-font);
-  color: var(--text-color);
+  color: var(--text-color-light);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -91,7 +92,7 @@ body {
     'GRAD' 0,
     'opsz' 24;
   font-size: 5rem !important;
-  color: var(--base-color);
+  color: var(--base-color-alt);
 }
 
 /*====  LAYOUT ============================ */
@@ -134,7 +135,7 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
-  background: var(--body-color);
+  background: var(--white);
 }
 
 #header.scroll {
@@ -163,7 +164,6 @@ body {
 }
 
 /*====  WHATSAPP BUTTON ============================ */
-/* From Uiverse.io by NelsonDJCR */
 .button-whatsapp {
   display: inline-block;
   transition: all 0.2s ease-in;
@@ -176,8 +176,8 @@ body {
   border-radius: 0.5em;
   background: #e8e8e8;
   border: 1px solid #e8e8e8;
-  box-shadow: 6px 6px 12px #c5c5c5,
-    -6px -6px 12px #ffffff;
+  /* box-shadow: 6px 6px 12px #c5c5c5,
+    -6px -6px 12px #ffffff; */
 }
 
 .button-whatsapp>svg {
@@ -382,7 +382,7 @@ nav.show div.icon-close {
 
 /*====  ABOUT ============================ */
 #About {
-  background: white;
+  background: var(--body-color);
 }
 
 #About {
@@ -423,6 +423,10 @@ nav.show div.icon-close {
 }
 
 /*====   SERVICES ============================ */
+#Services strong {
+  color: var(--base-color-second);
+}
+
 .cards.grid {
   gap: 1.5rem;
 }
@@ -448,25 +452,24 @@ nav.show div.icon-close {
 }
 
 /*====   TESTIMONIALS ============================ */
-#testimonials {
-  background: white;
-}
+
 
 #Testimonials blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
   border-radius: 0.25rem;
-  min-height: 192px;
+  min-height: 210px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--white);
 }
 
 #Testimonials blockquote p {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 #Testimonials blockquote p span {
@@ -481,17 +484,22 @@ nav.show div.icon-close {
   display: flex;
   align-items: center;
   font-style: normal;
+  color: var(--text-color);
 }
 
 #Testimonials .container {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 1120px;
 }
 
 #Testimonials header {
-  margin-bottom: 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #Testimonials cite img {
@@ -518,7 +526,7 @@ nav.show div.icon-close {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--base-color);
+  background: var(--base-color-alt);
 }
 
 /*====   CONTACT ============================ */
@@ -551,7 +559,7 @@ nav.show div.icon-close {
 
 /*====   FOOTER  ============================ */
 footer {
-  background: var(--base-color);
+  background: var(--white);
 }
 
 footer.section {
@@ -564,13 +572,13 @@ footer .logo {
 }
 
 footer .brand p {
-  color: var(--text-color-light);
+  color: var(--text-color);
   margin-bottom: 0.75rem;
 }
 
 footer i {
   font-size: 1.5rem;
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 footer .social {
@@ -589,7 +597,7 @@ footer .social a:hover {
 }
 
 footer a {
-  color: var(--text-color-light);
+  color: var(--text-color);
 }
 
 /*====   BACKTOP  ============================ */
