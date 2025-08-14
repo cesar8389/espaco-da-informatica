@@ -26,13 +26,12 @@ function changeHeaderWhenScrol() {
   }
 }
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.testimonials.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination'
   },
-  mousewheel: true,
   keyboard: true,
   breakpoints: {
     768: {
@@ -47,7 +46,7 @@ const swiper = new Swiper('.swiper-container', {
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 700,
+  duration: 400,
   reset: true
 })
 scrollReveal.reveal(
@@ -60,6 +59,27 @@ scrollReveal.reveal(
 `,
   { interval: 100 }
 )
+
+const imageSwiper = new Swiper('.image-swiper', {
+  loop: true,
+  slidesPerView: 1,
+  mousewheel: false,
+  watchOverflow: false,
+  spaceBetween: 0,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.image-swiper .swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.image-swiper .swiper-button-next',
+    prevEl: '.image-swiper .swiper-button-prev'
+  }
+});
 
 const backTopButton = document.querySelector('.backtop')
 
